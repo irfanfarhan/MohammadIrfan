@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { FirstPageComponent } from './components/first-page/first-page.component';
-import { SecondPageComponent } from './components/second-page/second-page.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const irfanRoutes: Routes = [
   {
@@ -13,14 +16,56 @@ const irfanRoutes: Routes = [
       {
         path: '',
         component: DashboardComponent
-      },
+      }
+    ]
+  },
+  {
+    path: 'about',
+    component: NavigationComponent,
+    children: [
       {
-        path: 'first-page',
-        component: FirstPageComponent
-      },
+        path: '',
+        component: AboutComponent
+      }
+    ]
+  },
+  {
+    path: 'resume',
+    component: NavigationComponent,
+    children: [
       {
-        path: 'second-page',
-        component: SecondPageComponent
+        path: '',
+        component: ResumeComponent
+      }
+    ]
+  },
+  {
+    path: 'portfolio',
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: PortfolioComponent
+      }
+    ]
+  },
+  {
+    path: 'services',
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: ServicesComponent
+      }
+    ]
+  },
+  {
+    path: 'contact',
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: ContactComponent
       }
     ]
   }

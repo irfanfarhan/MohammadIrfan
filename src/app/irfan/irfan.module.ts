@@ -4,9 +4,12 @@ import { SharedModule } from '../shared/shared.module';
 import { LibraryModule } from '../lib/lib.module';
 import { IrfanRoutingModule } from './irfan-routing.module';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { FirstPageComponent } from './components/first-page/first-page.component';
-import { SecondPageComponent } from './components/second-page/second-page.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
     imports: [
@@ -17,9 +20,12 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ],
     declarations: [
     NavigationComponent,
-    FirstPageComponent,
-    SecondPageComponent,
-    DashboardComponent],
+    DashboardComponent,
+    AboutComponent,
+    ResumeComponent,
+    PortfolioComponent,
+    ServicesComponent,
+    ContactComponent],
     entryComponents: [],
     providers: []
 })
