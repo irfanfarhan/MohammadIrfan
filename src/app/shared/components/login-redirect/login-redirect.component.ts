@@ -10,7 +10,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoginRedirectComponent implements OnInit {
   error: Error;
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.router.navigate(['/irfan']);

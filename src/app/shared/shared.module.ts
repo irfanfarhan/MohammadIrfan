@@ -10,7 +10,9 @@ import {
 } from 'angular2-toaster/angular2-toaster';
 import { TooltipModule } from 'ngx-tooltip';
 import { NgxChartsModule } from '@swimlane/ngx-charts/release';
+import { LoadingService } from './services/loading.service';
 import { LoginRedirectComponent } from './components/login-redirect/login-redirect.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   imports: [
@@ -24,7 +26,7 @@ import { LoginRedirectComponent } from './components/login-redirect/login-redire
     TooltipModule,
     NgxChartsModule
   ],
-  declarations: [LoginRedirectComponent],
+  declarations: [LoginRedirectComponent, LoaderComponent],
   exports: [
     CommonModule,
     BrowserModule,
@@ -35,8 +37,9 @@ import { LoginRedirectComponent } from './components/login-redirect/login-redire
     ToasterModule,
     TooltipModule,
     LoginRedirectComponent,
-    NgxChartsModule
+    NgxChartsModule,
+    LoaderComponent
   ],
-  providers: [ToasterService]
+  providers: [ToasterService, LoadingService]
 })
 export class SharedModule {}
