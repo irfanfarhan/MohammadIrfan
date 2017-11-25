@@ -1,0 +1,65 @@
+.contact {
+    .contact-header {
+        h1 {
+            font-size: 3em;
+            line-height: 2;
+            font-weight: 200;
+            font-style: italic;
+            text-transform: capitalize;
+            color: #008f68;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1.5em;
+            font-weight: 200;
+            text-transform: capitalize;
+            color: #000000;
+        }
+    }
+    .form-body {
+        padding: 30px;
+        margin: 40px 0;
+        box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        label {
+            font-size: 1.3em;
+            font-weight: 200;
+            text-transform: capitalize;
+            color: #008f68;
+        }
+        input {
+            border-radius: 0;
+        }
+        button {
+            background-color: #ffff !important;
+            border-radius: 8px;
+            color: rgba(0, 143, 104, 0.95);
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            font-size: 1.3em;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 0;
+            text-transform: capitalize;
+            font-style: italic;
+            &:hover {
+                color: #ffff !important;
+                background-color: #499C5A !important;
+            }
+        }
+        .contact-footer {
+            p {
+                font-size: 1em;
+                font-weight: 200;
+                text-transform: capitalize;
+                color: #000000;
+                word-break: break-all;
+            }
+            h4 {
+                font-size: 1.3em;
+                font-weight: 200;
+                text-transform: capitalize;
+                color: #008f68;
+            }
+        }
+    }
+}

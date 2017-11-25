@@ -11,6 +11,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CommonService } from './services/common.service';
 
 @NgModule({
   imports: [CommonModule, SharedModule, LibraryModule, IrfanRoutingModule],
@@ -24,6 +25,6 @@ import { ContactComponent } from './components/contact/contact.component';
     ContactComponent
   ],
   entryComponents: [],
-  providers: [LoadingService]
+  providers: [LoadingService, CommonService]
 })
 export class IrfanModule {}
