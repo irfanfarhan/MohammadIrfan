@@ -1,5 +1,14 @@
-.dashboard{
-  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-  background-color: #6bb756;
-  height: 300px;
+.dashboard {
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    background-color: #6bb756;
+    background: linear-gradient(to right, rgba(107, 183, 86, .95), rgba(0, 143, 104, .95));
+    height: 300px;
+    h1 {
+        font-size: 4em;
+        line-height: 2;
+        font-weight: 200;
+        font-style: italic;
+        text-transform: capitalize;
+        color:#ffffff;
+    }
 }
