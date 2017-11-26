@@ -1,10 +1,17 @@
 .portfolio {
-  h1 {
-      font-size: 3em;
-      line-height: 3;
-      font-weight: 200;
-      font-style: italic;
-      text-transform: capitalize;
-      color: #008f68;
-  }
+    h1 {
+        font-size: 3em;
+        line-height: 2;
+        font-weight: 200;
+        font-style: italic;
+        text-transform: capitalize;
+        color: #008f68;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-transform: capitalize;
+        color: #000000;
+    }
 }

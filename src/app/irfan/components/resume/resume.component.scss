@@ -1,10 +1,86 @@
 .resume {
-  h1 {
-      font-size: 3em;
-      line-height: 3;
-      font-weight: 200;
-      font-style: italic;
-      text-transform: capitalize;
-      color: #008f68;
-  }
+    h1 {
+        font-size: 3em;
+        line-height: 2;
+        font-weight: 200;
+        font-style: italic;
+        text-transform: capitalize;
+        color: #008f68;
+        margin-bottom: 0;
+    }
+    address {
+        margin-bottom: 10px !important;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-transform: capitalize;
+        color: #000000;
+    }
+    .text-left {
+        margin-bottom: 10px;
+        h1 {
+            font-size: 2em;
+        }
+    }
+    a {
+        font-size: 1em;
+        font-weight: 500;
+        text-decoration: none;
+        color: rgba(0, 143, 104, .95) !important;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+    .download-cv {
+        a {
+            background-color: #ffff !important;
+            border-radius: 8px;
+            color: rgba(0, 143, 104, 0.95);
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            font-size: 1.3em;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 0;
+            text-transform: capitalize;
+            font-style: italic;
+            margin-bottom: 20px;
+            &:hover {
+                color: #ffff !important;
+                background-color: #499C5A !important;
+            }
+        }
+    }
+    .resume-body {
+        padding: 20px;
+        margin: 40px 0;
+        box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        .text-left {
+            p {
+                font-size: 1em;
+                font-weight: 500;
+                color: #000000 !important;
+                word-break: break-all;
+            }
+            h4 {
+                font-size: 1.3em;
+                span {
+                    font-size: .7em;
+                    font-weight: 500;
+                    font-style: italic;
+                    text-transform: lowercase;
+                    color: rgba(107, 183, 86, .95) !important;
+                }
+            }
+        }
+        &:hover {
+            background-color: rgba(107, 183, 86, .95) !important;
+            cursor: pointer;
+            color: #fff !important;
+        }
+    }
 }
