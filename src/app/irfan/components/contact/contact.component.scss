@@ -46,20 +46,51 @@
                 background-color: #499C5A !important;
             }
         }
-        .contact-footer {
-            p {
-                font-size: 1em;
-                font-weight: 200;
-                text-transform: capitalize;
-                color: #000000;
-                word-break: break-all;
-            }
-            h4 {
-                font-size: 1.3em;
-                font-weight: 200;
-                text-transform: capitalize;
-                color: #008f68;
+        &.contact-footer {
+            .text-center {
+                &:hover {
+                    i,
+                    h4 {
+                        color: rgba(107, 183, 86, .95) !important;
+                    }
+                }
+                p {
+                    font-size: 1em;
+                    font-weight: 200;
+                    text-transform: capitalize;
+                    color: #000000 !important;
+                    word-break: break-all;
+                }
+                h4 {
+                    font-size: 1.3em;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: rgba(107, 183, 86, .95) !important;
+                    }
+                }
+                a {
+                    font-size: 1em;
+                    font-weight: 200;
+                    color: #000000 !important;
+                    word-break: break-all;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: rgba(0, 143, 104, .95) !important;
+                    }
+                }
             }
         }
+    }
+    .btn.disabled,
+    .btn[disabled] {
+        cursor: not-allowed !important;
+    }
+    .requiredField {
+        font-weight: 500;
+        font-size: 8px;
+        color: #DD0031;
     }
 }
