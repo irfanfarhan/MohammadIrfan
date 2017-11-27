@@ -1,17 +1,78 @@
 .about {
-    h1 {
-        font-size: 3em;
-        line-height: 2;
-        font-weight: 200;
-        font-style: italic;
-        text-transform: capitalize;
-        color: #008f68;
-        margin-bottom: 0;
+    .about-header {
+        margin: 0 0 40px 0;
+        h1 {
+            font-size: 3em;
+            line-height: 2;
+            font-weight: 200;
+            font-style: italic;
+            text-transform: capitalize;
+            color: #008f68;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1.5em;
+            font-weight: 200;
+            text-transform: capitalize;
+            color: #000000;
+        }
     }
-    p {
-        font-size: 1.5em;
-        font-weight: 200;
-        text-transform: capitalize;
-        color: #000000;
+    .about-skills {
+        margin-bottom: 10px;
+        h1 {
+            font-size: 2em;
+            line-height: 2;
+            font-weight: 200;
+            font-style: italic;
+            text-transform: capitalize;
+            color: #008f68;
+            margin-bottom: 0;
+        }
     }
+    .about-body {
+        padding: 30px;
+        box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        p {
+            font-size: 20px;
+            font-weight: 200;
+            color: #008f68;
+        }
+        .about-list {
+            color: #008f68;
+            li {
+                &.list-group-item {
+                    border: none !important;
+                }
+                i {
+                    padding: 0 15px 0 0;
+                }
+            }
+        }
+    }
+    .about-skills-section {
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+      .text-center {
+          &:hover {
+              i,
+              h4 {
+                  color: rgba(107, 183, 86, .95) !important;
+              }
+          }
+          p {
+              font-size: 1em;
+              font-weight: 200;
+              color: #000000 !important;
+              word-break: break-all;
+          }
+          h4 {
+              font-size: 1.3em;
+              text-transform: uppercase;
+              &:hover {
+                  color: rgba(107, 183, 86, .95) !important;
+              }
+          }
+      }
+  }
 }
