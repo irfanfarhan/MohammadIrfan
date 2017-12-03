@@ -15,8 +15,6 @@ import {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  userId: string;
-  userName: string;
   constructor(
     @Inject(DOCUMENT) private document: any,
     private router: Router,
@@ -25,5 +23,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.loadingService.toggleLoadingIndicator(true);
+    this.router.events.subscribe(() => window.scrollTo(0, 0));
   }
 }

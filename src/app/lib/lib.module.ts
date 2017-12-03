@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImageComponent } from './image/image.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
     imports: [
@@ -11,10 +12,12 @@ import { ImageComponent } from './image/image.component';
         FormsModule
     ],
     declarations: [
-        ImageComponent
+        ImageComponent,
+        ScrollToTopComponent
     ],
     exports: [
-      ImageComponent
+      ImageComponent,
+      ScrollToTopComponent
     ],
     providers: [
     ]

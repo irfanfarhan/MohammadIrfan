@@ -63,7 +63,7 @@
             p {
                 font-size: 1em;
                 font-weight: 500;
-                color: #000000 !important;
+                color: #000000;
                 word-break: break-all;
             }
             h4 {
@@ -73,7 +73,7 @@
                     font-weight: 500;
                     font-style: italic;
                     text-transform: lowercase;
-                    color: rgba(107, 183, 86, .95) !important;
+                    color: rgba(107, 183, 86, .95);
                 }
             }
         }
@@ -81,6 +81,13 @@
             background-color: rgba(107, 183, 86, .95) !important;
             cursor: pointer;
             color: #fff !important;
+            p,
+            span {
+                color: #fff !important;
+            }
+            a {
+                color: #000 !important;
+            }
         }
     }
 }
