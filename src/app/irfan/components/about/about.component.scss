@@ -50,29 +50,56 @@
         }
     }
     .about-skills-section {
-      padding: 30px;
-      margin: 40px 0;
-      box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
-      .text-center {
-          &:hover {
-              i,
-              h4 {
-                  color: rgba(107, 183, 86, .95) !important;
-              }
-          }
-          p {
-              font-size: 1em;
-              font-weight: 200;
-              color: #000000 !important;
-              word-break: break-all;
-          }
-          h4 {
-              font-size: 1.3em;
-              text-transform: uppercase;
-              &:hover {
-                  color: rgba(107, 183, 86, .95) !important;
-              }
-          }
-      }
-  }
+        padding: 30px;
+        margin: 40px 0;
+        box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        .text-center {
+            &:hover {
+                i,
+                h4 {
+                    color: rgba(107, 183, 86, .95) !important;
+                }
+            }
+            p {
+                font-size: 1em;
+                font-weight: 200;
+                color: #000000 !important;
+                word-break: break-all;
+            }
+            h4 {
+                font-size: 1.3em;
+                text-transform: uppercase;
+                &:hover {
+                    color: rgba(107, 183, 86, .95) !important;
+                }
+            }
+        }
+        .carousel-control.left,
+        .carousel-control.right {
+            background-image: none;
+            position: absolute;
+            top: 30px;
+            height: 40px;
+            background: #6bb756;
+            width: 30px;
+            cursor: pointer;
+            outline: none;
+            padding: 4px;
+        }
+        .carousel-inner {
+            .item {
+                ul {
+                    margin: 0;
+                    li {
+                        float: left;
+                        list-style: none;
+                        margin: 0px 40px 0;
+                    }
+                }
+                img {
+                    height: 100px !important;
+                }
+            }
+        }
+    }
 }
