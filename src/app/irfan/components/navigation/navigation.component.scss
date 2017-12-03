@@ -1,9 +1,10 @@
 .header {
     background-color: #6bb756;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
-    background: linear-gradient(to right, rgba(107, 183, 86, .95), rgba(0, 143, 104, .95));
+    background: linear-gradient( to right, rgba(107, 183, 86, 0.95), rgba(0, 143, 104, 0.95));
     height: 3.75rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     .navbar-brand {
         img {
             position: relative;
@@ -12,38 +13,38 @@
             top: 12px;
             height: 40px;
         }
-        color: #FFFFFF !important;
+        color: #ffffff !important;
         text-transform: capitalize;
         line-height: 23px;
         font-size: 16px;
         i {
             &.fa-2x {
-                font-size: 20px !important
+                font-size: 20px !important;
             }
         }
     }
     .nav-menu-list-left {
         li {
             a {
-                color: #FFFFFF !important;
+                color: #ffffff !important;
                 text-transform: capitalize;
                 line-height: 20px;
                 font-size: 14px;
                 i {
                     &.fa-2x {
-                        font-size: 20px !important
+                        font-size: 20px !important;
                     }
                 }
                 &:hover,
                 &:focus,
                 .active {
                     color: rgba(255, 255, 255, 0.7) !important;
-                    background-color: rgba(0, 0, 0, .1) !important;
+                    background-color: rgba(0, 0, 0, 0.1) !important;
                 }
             }
             &.active {
                 a {
-                    background-color: rgba(0, 0, 0, .1);
+                    background-color: rgba(0, 0, 0, 0.1);
                 }
             }
         }
@@ -51,17 +52,17 @@
     .nav-menu-list-right {
         li {
             a {
-                color: #FFFFFF !important;
+                color: #ffffff !important;
                 text-transform: capitalize;
                 line-height: 17px;
                 font-size: 14px;
                 i {
                     &.fa-2x {
-                        font-size: 20px !important
+                        font-size: 20px !important;
                     }
                 }
                 &:hover {
-                    color: #FAE042 !important; //background-color: rgba(0, 0, 0, .1) !important;
+                    color: #fae042 !important; //background-color: rgba(0, 0, 0, .1) !important;
                 }
             }
         }
@@ -74,7 +75,7 @@
             box-shadow: none;
         }
         &.in {
-            background: linear-gradient(to right, rgba(107, 183, 86, .95), rgba(0, 143, 104, .95));
+            background: linear-gradient( to right, rgba(107, 183, 86, 0.95), rgba(0, 143, 104, 0.95));
         }
     }
     .navbar-toggle {
@@ -84,7 +85,7 @@
         &:focus,
         .active {
             color: rgba(255, 255, 255, 0.7) !important;
-            background-color: rgba(0, 0, 0, .1) !important;
+            background-color: rgba(0, 0, 0, 0.1) !important;
         }
     }
 }
@@ -97,7 +98,7 @@
         .nav-menu-list-right {
             li {
                 a {
-                    float: left
+                    float: left;
                 }
             }
         }
@@ -112,7 +113,7 @@
         .nav-menu-list-right {
             li {
                 a {
-                    float: left
+                    float: left;
                 }
             }
         }
