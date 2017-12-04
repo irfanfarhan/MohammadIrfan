@@ -18,6 +18,7 @@
         padding: 30px;
         margin: 40px 0;
         box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        transition: all .1s linear;
         button {
             background-color: #ffff !important;
             border-radius: 8px;
@@ -40,6 +41,7 @@
                 i,
                 h4 {
                     color: rgba(107, 183, 86, .95) !important;
+                    transform: translateY(3px);
                 }
             }
             p {

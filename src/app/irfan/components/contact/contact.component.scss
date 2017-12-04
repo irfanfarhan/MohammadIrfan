@@ -20,6 +20,7 @@
         padding: 30px;
         margin: 40px 0;
         box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        transition: all .1s linear;
         label {
             font-size: 1.3em;
             font-weight: 200;
@@ -43,9 +44,14 @@
             text-transform: capitalize;
             font-style: italic;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            transition: all .1s linear;
             &:hover {
                 color: #ffff !important;
                 background-color: #499C5A !important;
+            }
+            &:active {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+                transform: translateY(3px);
             }
         }
         &.contact-footer {
@@ -54,6 +60,7 @@
                     i,
                     h4 {
                         color: rgba(107, 183, 86, .95) !important;
+                        transform: translateY(3px);
                     }
                 }
                 p {

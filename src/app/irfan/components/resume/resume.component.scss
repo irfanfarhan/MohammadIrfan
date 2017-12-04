@@ -50,10 +50,15 @@
             text-transform: capitalize;
             font-style: italic;
             margin-bottom: 20px;
+            transition: all .1s linear;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
             &:hover {
                 color: #ffff !important;
                 background-color: #499C5A !important;
+            }
+            &:active {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+                transform: translateY(3px);
             }
         }
     }
@@ -61,6 +66,7 @@
         padding: 20px;
         margin: 40px 0;
         box-shadow: 1px 1px 15px rgba(67, 38, 100, .15);
+        transition: all .1s linear;
         .text-left {
             p {
                 font-size: 1em;
@@ -83,6 +89,7 @@
             background-color: rgba(107, 183, 86, .95) !important;
             cursor: pointer;
             color: #fff !important;
+            transform: translateY(3px);
             p,
             span {
                 color: #fff !important;
