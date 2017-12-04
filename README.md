@@ -1,4 +1,4 @@
-# MyApp
+# My Portfolio(Mohammad Irfan)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
