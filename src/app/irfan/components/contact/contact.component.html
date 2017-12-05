@@ -12,7 +12,7 @@
               <span class="glyphicon glyphicon-star"></span>
             </sup>
           </label>
-                    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Name">
+                    <input type="text" class="form-control" [(ngModel)]="contactFormData.name" id="name" formControlName="name" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email
@@ -20,7 +20,7 @@
               <span class="glyphicon glyphicon-star"></span>
             </sup>
           </label>
-                    <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email">
+                    <input type="email" class="form-control" [(ngModel)]="contactFormData.email" formControlName="email" id="email" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="message">Message
@@ -28,7 +28,7 @@
               <span class="glyphicon glyphicon-star"></span>
             </sup>
           </label>
-                    <textarea class="form-control" rows="5" formControlName="message" id="message" placeholder="Message"></textarea>
+                    <textarea class="form-control" [(ngModel)]="contactFormData.message" rows="5" formControlName="message" id="message" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" [disabled]="!contactForm.valid" class="btn btn-default">Send Message</button>
             </form>

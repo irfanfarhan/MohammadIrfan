@@ -5,6 +5,7 @@ import {
   FormControl,
   Validators
 } from '@angular/forms';
+import { ContactDataModel } from '../../model/contact-data.model';
 
 @Component({
   selector: 'app-contact',
@@ -13,6 +14,7 @@ import {
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
+  contactFormData: ContactDataModel = new ContactDataModel();
   constructor(private _fb: FormBuilder) {}
 
   ngOnInit() {
@@ -22,5 +24,7 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required]
     });
   }
-  contactFormSubmit() {}
+  contactFormSubmit() {
+    console.log(this.contactFormData);
+  }
 }
