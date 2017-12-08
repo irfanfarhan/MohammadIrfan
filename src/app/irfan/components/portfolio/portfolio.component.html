@@ -6,29 +6,21 @@
         </div>
     </div>
     <div class="grid">
-        <a href="http://kvrrlawcollege.com/" target="_blank">
-            <figure class="effect-lily">
-                <img src="assets/images/kvrr.png" alt="K V Ranga Reddy Law College" />
-                <figcaption>
-                    <div>
-                        <h2>k v ranga reddy law college
-                            <a href="https://github.com/irfanfarhan/kvrrlawcollege" target="_blank">
-                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </h2>
-                    </div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="http://www.cinecastings.com" target="_blank">
-            <figure class="effect-lily">
-                <img src="assets/images/CINECASTINGS.png" alt="K V Ranga Reddy Law College" />
-                <figcaption>
-                    <div>
-                        <h2>cine castings</h2>
-                    </div>
-                </figcaption>
-            </figure>
-        </a>
+        <div *ngFor="let metadata of portfolioMetadata; let i=index">
+            <a href="{{metadata.webHref}}" target="_blank">
+                <figure class="effect-lily">
+                    <img src="{{metadata.iconPath}}" alt="{{metadata.title}}" />
+                    <figcaption>
+                        <div>
+                            <h2>{{metadata.title}}
+                                <a href="{{metadata.GitHref}}" *ngIf="metadata.gitlinkShow" target="_blank">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </h2>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
     </div>
 </div>

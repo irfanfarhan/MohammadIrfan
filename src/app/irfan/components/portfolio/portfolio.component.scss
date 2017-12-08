@@ -1,4 +1,5 @@
 .portfolio {
+    margin-bottom: 20px;
     h1 {
         font-size: 3em;
         line-height: 2;
@@ -71,13 +72,6 @@
             }
         }
     }
-    /* Common style */
-    /* Anchor will cover the whole item by default */
-    /* For some effects it will show as a button */
-    /* Individual effects */
-    /*---------------*/
-    /***** Lily *****/
-    /*---------------*/
     figure.effect-lily {
         img {
             max-width: none;
