@@ -8,7 +8,6 @@ import { IrfanModule } from './irfan/irfan.module';
 import { SharedModule } from './shared/shared.module';
 import { LibraryModule } from './lib/lib.module';
 import { AppComponent } from './app.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,8 +17,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     SharedModule,
     LibraryModule,
     BrowserAnimationsModule,
-    IrfanModule,
-    MDBBootstrapModule.forRoot()
+    IrfanModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
