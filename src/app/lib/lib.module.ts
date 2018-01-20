@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImageComponent } from './image/image.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
     imports: [
@@ -12,13 +14,17 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
         FormsModule
     ],
     declarations: [
-        ImageComponent,
-        ScrollToTopComponent
-    ],
-    exports: [
       ImageComponent,
-      ScrollToTopComponent
-    ],
+      ScrollToTopComponent,
+      TabsComponent,
+      TabComponent
+  ],
+  exports: [
+    ImageComponent,
+    ScrollToTopComponent,
+    TabsComponent,
+    TabComponent
+  ],
     providers: [
     ]
 })

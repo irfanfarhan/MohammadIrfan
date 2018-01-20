@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioMetadata } from './../../model/portfolio-metadata.model';
+import { PortfolioWebSitesMetadata, PortfolioAngular5ComponentsMetadata } from './../../model/portfolio-metadata.model';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,11 +7,13 @@ import { PortfolioMetadata } from './../../model/portfolio-metadata.model';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  portfolioMetadata: any;
+  portfolioWebSitesMetadata: any;
+  portfolioAngular5ComponentsMetadata: any;
   constructor() { }
 
   ngOnInit() {
-    this.portfolioMetadata = PortfolioMetadata;
+    this.portfolioWebSitesMetadata = PortfolioWebSitesMetadata;
+    this.portfolioAngular5ComponentsMetadata = PortfolioAngular5ComponentsMetadata;
   }
 
 }

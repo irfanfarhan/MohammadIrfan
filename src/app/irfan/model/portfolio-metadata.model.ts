@@ -1,4 +1,4 @@
-export const PortfolioMetadata = [
+export const PortfolioWebSitesMetadata = [
   {
     id: 1,
     title: 'K V Ranga Reddy Law College',
@@ -14,9 +14,12 @@ export const PortfolioMetadata = [
     webHref: 'http://www.cinecastings.com',
     GitHref: 'https://github.com/irfanfarhan/kvrrlawcollege',
     gitlinkShow: false
-  },
+  }
+];
+
+export const PortfolioAngular5ComponentsMetadata = [
   {
-    id: 3,
+    id: 1,
     title: 'Angular5 Tabs Component',
     iconPath: 'assets/images/ng5TabsComponent.png',
     webHref: 'https://irfanfarhan.github.io/Angular5-Tabs-Component/',

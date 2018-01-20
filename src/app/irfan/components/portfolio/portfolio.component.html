@@ -5,22 +5,46 @@
             <p>My latest works</p>
         </div>
     </div>
-    <div class="grid">
-        <div *ngFor="let metadata of portfolioMetadata; let i=index">
-            <a href="{{metadata.webHref}}" target="_blank">
-                <figure class="effect-lily">
-                    <img src="{{metadata.iconPath}}" alt="{{metadata.title}}" />
-                    <figcaption>
-                        <div>
-                            <h2>{{metadata.title}}
-                                <a href="{{metadata.GitHref}}" *ngIf="metadata.gitlinkShow" target="_blank">
-                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </h2>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
+    <div class="col-md-12">
+        <div class="grid">
+            <app-tabs>
+                <app-tab [title]="'Web Sites'">
+                    <div *ngFor="let metadata of portfolioWebSitesMetadata; let i=index">
+                        <a href="{{metadata.webHref}}" target="_blank">
+                            <figure class="effect-lily">
+                                <img src="{{metadata.iconPath}}" alt="{{metadata.title}}" />
+                                <figcaption>
+                                    <div>
+                                        <h2>{{metadata.title}}
+                                            <a href="{{metadata.GitHref}}" *ngIf="metadata.gitlinkShow" target="_blank">
+                                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </app-tab>
+                <app-tab [title]="'Angular5 Components'">
+                    <div *ngFor="let metadata of portfolioAngular5ComponentsMetadata; let i=index">
+                        <a href="{{metadata.webHref}}" target="_blank">
+                            <figure class="effect-lily">
+                                <img src="{{metadata.iconPath}}" alt="{{metadata.title}}" />
+                                <figcaption>
+                                    <div>
+                                        <h2>{{metadata.title}}
+                                            <a href="{{metadata.GitHref}}" *ngIf="metadata.gitlinkShow" target="_blank">
+                                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </app-tab>
+            </app-tabs>
         </div>
     </div>
 </div>
