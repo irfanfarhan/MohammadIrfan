@@ -25,5 +25,29 @@ export const PortfolioAngular5ComponentsMetadata = [
     webHref: 'https://irfanfarhan.github.io/Angular5-Tabs-Component/',
     GitHref: 'https://github.com/irfanfarhan/Angular5-Tabs-Component',
     gitlinkShow: true
+  },
+  {
+    id: 2,
+    title: 'Angular 5, Node JS & MongoDB App',
+    iconPath: 'assets/images/Angular5NodejsApp.png',
+    webHref: 'https://irfanfarhan.github.io/Angular5NodejsApp/',
+    GitHref: 'https://github.com/irfanfarhan/Angular5NodejsApp',
+    gitlinkShow: true
+  },
+  {
+    id: 3,
+    title: 'Angular 5 Components',
+    iconPath: 'assets/images/Angular5Components.png',
+    webHref: 'https://irfanfarhan.github.io/Angular5-Components/',
+    GitHref: 'https://github.com/irfanfarhan/Angular5-Components',
+    gitlinkShow: true
+  },
+  {
+    id: 4,
+    title: 'Angular 5 & Angular Material Kit',
+    iconPath: 'assets/images/Angular5-Material-Kit.png',
+    webHref: 'https://irfanfarhan.github.io/Angular5-Material-Kit/',
+    GitHref: 'https://github.com/irfanfarhan/Angular5-Material-Kit',
+    gitlinkShow: true
   }
 ];
