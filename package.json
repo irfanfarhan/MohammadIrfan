@@ -33,7 +33,7 @@
         "d3": "^4.10.0",
         "font-awesome": "^4.7.0",
         "intl": "^1.2.5",
-        "jquery": "^1.12.4",
+        "jquery": "^3.4.1",
         "ngx-tooltip": "0.0.9",
         "rxjs": "^5.4.3",
         "typescript": "2.4.2",
